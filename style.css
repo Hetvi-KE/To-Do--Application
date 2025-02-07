@@ -1,0 +1,230 @@
+/* Reset & General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Styling */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Category Filter Styling */
+#category-filter {
+    margin-top: 15px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#category-filter:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+/* Input Bar & Dropdown Spacing */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adds spacing between input and dropdown */
+    margin-top: 20px;
+}
+
+/* Task Input Section */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+}
+
+.dark-mode #category-filter {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode #category-filter:hover {
+    background-color: #555;
+}
+
+/* Title Styling */
+.title-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px;
+    padding: 20px;
+    color: white;
+}
+
+/* Heading Style */
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Icon Style */
+#icon {
+    font-size: 30px;
+    color: white;
+}
+
+/* Task Input Section */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar .btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: #ff7675;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar .btn:hover {
+    background-color: #d63031;
+    transform: scale(1.05);
+}
+
+/* Calendar Styling */
+#calendar {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Task List */
+#task-list {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    width: 50%;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-number {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.task-time {
+    font-size: 14px;
+    color: #555;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.task-item .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-item i {
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff7675;
+    transition: color 0.3s;
+}
+
+.task-item i:hover {
+    color: #d63031;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+}
+
+.dark-mode .task-item {
+    background: #3b3b3b;
+    color: white;
+}
+
+/* Dark Mode Icon */
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    color: #d63031;
+}
